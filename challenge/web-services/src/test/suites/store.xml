@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Pet Store - Store">
+    <parameter name="reportName" value="Store_Report"/>
+    <test name = "Store Suite">
+        <classes>
+            <class name = "demo.automation.challenge.StoreTest">
+                <methods>
+                    <include name = "getStoreInventory200"/>
+                    <include name = "postOrder200"/>
+                    <include name = "postOrder405"/>
+                    <include name = "postOrder500"/>
+                    <include name = "getOrder200"/>
+                    <include name = "deleteOrder200"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

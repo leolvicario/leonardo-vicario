@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Monefy Testing suite">
+    <suite-files>
+        <suite-file path="income.xml"/>
+        <suite-file path="expenses.xml"/>
+        <suite-file path="movements.xml"/>
+        <suite-file path="transfer.xml"/>
+        <suite-file path="data.xml"/>
+    </suite-files>
+</suite>

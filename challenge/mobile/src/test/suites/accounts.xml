@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Monefy - Accounts">
+    <parameter name="reportName" value="Accounts_Report"/>
+    <test name = "Accountst Suite">
+        <classes>
+            <class name = "demo.automation.challenge.AccountsTest">
+                <methods>
+                    <include name = "addAccountWithInitialBalance"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

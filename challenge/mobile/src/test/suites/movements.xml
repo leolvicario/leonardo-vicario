@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Monefy - Movements">
+    <parameter name="reportName" value="Movements_Report"/>
+    <test name = "Movements Suite">
+        <classes>
+            <class name = "demo.automation.challenge.MovementTest">
+                <methods>
+                    <include name = "movementEntry"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

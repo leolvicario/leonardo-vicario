@@ -1,0 +1,33 @@
+host: "http://0.0.0.0"
+port: "4723"
+
+emulatorName: "Pixel_3_Emulator"
+
+sut:
+  devices:
+    - name: "ANDROID_EMULATOR"
+      capabilities:
+        platformName: "Android"
+        deviceName: "Android_SDK_built_for_x86"
+        udid: "emulator-5554"
+        automationName: "UIAutomator2"
+        autoGrantPermissions: true
+        clearDeviceLogsOnStart: true
+        fullReset: true
+        app: "src/test/resources/monefy.apk"
+        appPackage: "com.monefy.app.lite"
+        appWaitActivity: "com.monefy.activities.main.MainActivity_"
+        newCommandTimeout: 380
+    - name: "ANDROID_DEVICE"
+      capabilities:
+        platformName: "Android"
+        deviceName: "xxxxxxx"
+        udid: "xxxxxxx"
+        automationName: "UIAutomator2"
+        autoGrantPermissions: true
+        clearDeviceLogsOnStart: true
+        fullReset: true
+        app: "src/test/resources/monefy.apk"
+        appPackage: "com.monefy.app.lite"
+        appWaitActivity: "com.monefy.activities.main.MainActivity_"
+        newCommandTimeout: 180

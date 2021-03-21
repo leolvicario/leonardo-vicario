@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Monefy - Income">
+    <parameter name="reportName" value="Income_Report"/>
+    <test name = "Income Suite">
+        <classes>
+            <class name = "demo.automation.challenge.IncomeTest">
+                <methods>
+                    <include name = "addIncome"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Monefy - Expenses">
+    <parameter name="reportName" value="Expenses_Report"/>
+    <test name = "Expenses Suite">
+        <classes>
+            <class name = "demo.automation.challenge.ExpenseTest">
+                <methods>
+                    <include name = "addExpense"/>
+                    <include name = "addExpenseQuick"/>
+                    <include name = "categoryPercentages"/>
+                </methods>
+            </class>
+            <class name = "demo.automation.challenge.MovementTest">
+                <methods>
+                    <include name = "movementEntry"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

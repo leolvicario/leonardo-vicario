@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Pet Store Testing suite">
+    <suite-files>
+        <suite-file path="pets.xml"/>
+        <suite-file path="store.xml"/>
+        <suite-file path="users.xml"/>
+    </suite-files>
+</suite>

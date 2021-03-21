@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Pet Store - Users">
+    <parameter name="reportName" value="Users_Report"/>
+    <test name = "Users Suite">
+        <classes>
+            <class name = "demo.automation.challenge.UserTest">
+                <methods>
+                    <include name = "postUser200"/>
+                    <include name = "getLogin200"/>
+                    <include name = "getUser200"/>
+                    <include name = "deleteUser200"/>
+                    <include name = "deleteUser404"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

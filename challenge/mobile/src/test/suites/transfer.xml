@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Monefy - Transfer">
+    <parameter name="reportName" value="Transfer_Report"/>
+    <test name = "Transfer Suite">
+        <classes>
+            <class name = "demo.automation.challenge.TransferTest">
+                <methods>
+                    <include name = "transferFromOverall"/>
+                    <include name = "transferFromSender"/>
+                    <include name = "transferFromReceiver"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

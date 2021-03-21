@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Monefy - Data treatment">
+    <parameter name="reportName" value="DataTreatment_Report"/>
+    <test name = "Data Treatment Suite">
+        <classes>
+            <class name = "demo.automation.challenge.DataTest">
+                <methods>
+                    <include name = "clearData"/>
+                    <include name = "closeApp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
